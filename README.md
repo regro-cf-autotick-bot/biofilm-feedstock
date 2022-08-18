@@ -7,7 +7,7 @@ Package license: GPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/biofilm-feedstock/blob/main/LICENSE.txt)
 
-Summary: BIOlogical Filter Model builder
+Summary: another opts parser
 
 Current build status
 ====================
