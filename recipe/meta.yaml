@@ -11,7 +11,7 @@ source:
   sha256: b285d80da26aebdf41c7b4273c1b31717a035ff731169092a4ca1ac98b2cff3d
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -29,6 +29,7 @@ requirements:
     - scikit-learn >=0.24.2
     - structout ==0.1.44
     - ubergauss ==0.0.43
+    - pynisher ==0.6.4
 
 test:
   imports:
