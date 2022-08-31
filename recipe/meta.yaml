@@ -35,10 +35,6 @@ test:
   imports:
     - biofilm
     - biofilm.algo
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/smautner/biofilm
