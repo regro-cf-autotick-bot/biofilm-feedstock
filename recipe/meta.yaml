@@ -1,5 +1,5 @@
 {% set name = "biofilm" %}
-{% set version = "0.0.97" %}
+{% set version = "0.0.98" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/biofilm-{{ version }}.tar.gz
-  sha256: 512a2476441486b64d8477d878a2fd3bbf751766d4782115f79f243088622b51
+  sha256: d7599c12a4dac12c98c4030f65ce1f3f9a03dae2859e8e146c7a744c5e72157f
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - python >=3.8
   run:
     - python >=3.8
-    - auto-sklearn >=0.14.2
+    - auto-sklearn >=0.15
     - dirtyopts >=0.0.18
     - eden-kernel >=0.3.1348
     - lmz >=0.1.12
@@ -29,7 +29,7 @@ requirements:
     - scikit-learn >=0.24.2
     - structout >=0.1.44
     - ubergauss >=0.0.43
-    - pynisher ==0.6.4
+    - pynisher <=0.7
 
 test:
   imports:
