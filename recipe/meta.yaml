@@ -1,5 +1,5 @@
 {% set name = "biofilm" %}
-{% set version = "0.0.98" %}
+{% set version = "0.0.100" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/biofilm-{{ version }}.tar.gz
-  sha256: d7599c12a4dac12c98c4030f65ce1f3f9a03dae2859e8e146c7a744c5e72157f
+  sha256: a6502865e745656a80726a16f75211eba4f2b83c26a8d69afd5f8557c9c933df
 
 build:
   number: 0
