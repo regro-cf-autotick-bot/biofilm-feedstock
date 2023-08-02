@@ -1,6 +1,5 @@
 {% set name = "biofilm" %}
-{% set version = "0.0.102" %}
-
+{% set version = "0.0.110" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/biofilm-{{ version }}.tar.gz
-  sha256: 83fb6093bc16722b6220eb571bd7a5f1411c5e30b0550acb80729b1ed25bb68c
+  sha256: 8325523be7c1397be421dfa4e09954822e680811ae5ac80e53b6f482e5acdfd6
 
 build:
   number: 0
@@ -17,19 +16,19 @@ build:
 
 requirements:
   host:
-    - pip
     - python >=3.8
+    - pip
   run:
     - python >=3.8
-    - auto-sklearn >=0.15
-    - dirtyopts >=0.0.18
-    - eden-kernel >=0.3.1348
-    - lmz >=0.1.12
-    - numpy >=1.22.0
     - scikit-learn >=0.24.2
-    - structout >=0.1.44
-    - ubergauss >=0.0.43
-    - pynisher <=0.7
+    - ubergauss ==0.0.43
+    - lmz ==0.1.12
+    - dirtyopts ==0.0.18
+    - numpy >=1.22.0
+    - structout ==0.1.44
+    - auto-sklearn ==0.15
+    - eden-kernel ==0.3.1348
+    - pynisher <=.7
 
 test:
   imports:
@@ -38,7 +37,7 @@ test:
 
 about:
   home: https://github.com/smautner/biofilm
-  summary: another opts parser
+  summary: FILtering Models for BIOlogical data
   license: GPL-3.0-or-later
   license_file: LICENSE
 
