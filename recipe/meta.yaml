@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/biofilm-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/biofilm-{{ version }}.tar.gz
   sha256: 6c36bb00e64df7b87261d28e5dbd1ff4850b2a0146a11a07fe59b5e4431cae94
 
 
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - auto-sklearn >=0.15
     - dirtyopts >=0.0.18
     - eden-kernel >=0.3.1348
@@ -33,6 +33,8 @@ requirements:
     - pynisher <=0.7
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - biofilm
     - biofilm.algo
